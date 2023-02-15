@@ -1,6 +1,6 @@
 from sys import argv
 
-# compute all permutations of a string in alphabetic order
+# compute all permutations of a string
 def permutations(s):
   if len(s) == 0:
     return []
