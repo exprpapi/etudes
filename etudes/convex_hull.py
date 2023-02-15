@@ -18,7 +18,7 @@ def convex_hull(points):
     far_point = p1 = next(filter(lambda p: p is not point, points), None)
 
     candidates = (p for p in points if p is not point and p is not p1)
-    candidates = filter(lambda p: orientation(point, far_point, p) > 0, points)
+    candidates = filter(lambda p: orientation(point, far_point, p) > 0, candidates)
 
     for p in candidates:
       far_point = p
